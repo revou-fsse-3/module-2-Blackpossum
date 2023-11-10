@@ -1,9 +1,84 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/bwEfZG3u)
 
-# yosaphat Harwindra Profile
+>**!Note**
+> This is repository for assignment on checkpoint #2 "deployment of project from Week 1-3"
+> detail about the website project you can check on my other repository here : [Web-project](https://github.com/Blackpossum/module-1-yosephat-assigment)
+# Deploying a static Websites
+##### this is a guide to help you deploy your static websites from your repository using netlify to host your project,please follow along this steps as a tutorial guide:
 
-> [!NOTE]
-> This is repository for assignment on checkpoint #1 "readme"
+> [!IMPORTANT]
+> prerequisite : have a static website ready for deployment 
+> have a basic knowledge about git repository management.
+> have a netlify account or willing to register to Netlify.
+> provide custom domain name, or you can either use free domain from netlify. 
+
+## deploy repository to a third party hosting
+1. first things first, in this tutorial guide we will use for hosting our project repository, open netlify site here i'll provide you a link (https://app.netlify.com/) and Login into your Netlify account (if you dont have account on netlify,you can choose signup button to register your account on netlify).
+
+![Landing-page](/assets/mrkdwn-assets/netlify-landing.png).
+![login](/assets/mrkdwn-assets/login-netlify.png)
+
+on login option page use your preffered platform that you use for your project repo, in this case we will use github account for login to Netlify.
+
+![login-page](/assets/mrkdwn-assets/login-page.png)
+
+2. after login completed, you'll redirected to your repository page on netlify 
+and wil be ask to choose repository to be hosted, choose your project repo and click deploy.
+
+![repo-management](/assets/mrkdwn-assets/netlify-repo-list.png)
+
+3. next you will be redirected into your site page
+![netlify-dashboard](/assets/mrkdwn-assets/netlify-site%20overview.png)
+
+if you just deploy, it might need few minute untill your deploment can be accesed, when the proccess completed, the link to your site will be in blueish color like image above.
+
+4. for now your project is already can be accesed via netlify default domain.
+
+## setting and Establishing custom domain and register it into Netlify
+
+### buy a domain on Niagahoster
+in order to register custom domain on netlify, you need to have a custom domain first
+go to domain hosting provider to buy a custom domain, in this tutorial guide i will use __Niagahoster__ as my domain registrar for my costume domain.
+
+1. go to Niagahoster site, and buy a domain name for your site here i provide you the link 
+go to (https://www.niagahoster.co.id/domain-murah)
+
+2. you will be redirected to niaga hoster page, type your domain name and cek for availability of the domain, is it already taken or not
+![domain-search](/assets/mrkdwn-assets/niaga%20hoster%20page.png)
+
+3. if your domain is available to use, purchase the domain name and after payment completed you will be redirected to your domain management in Niagahoster 
+![availability](/assets/mrkdwn-assets/availability%20.png)
+
+4. open your domain management page, you will found your domain DNS and another configuration, leave it for now.
+![niagahoster](/assets/mrkdwn-assets/niagahoster.png) 
+![domain-info](/assets/mrkdwn-assets/domain%20information%20.png) ![DNS-server](/assets/mrkdwn-assets/hostinger-dns.png)
+
+### register custom domain on Netlify
+
+1. go to your netlify site-overview page > go to yoaur site cnfiguraton 
+![site-config](/assets/mrkdwn-assets/site-configuration.png)
+
+2. go to domain tab on the left panel > then click add custom domain > enter your custom domain
+![enter-domain](/assets/mrkdwn-assets/netlify-add-domain.png) then click add domain 
+
+3. create a CNAME record on Niaga hoster that point to your default netlify domain 
+![DNS](/assets/mrkdwn-assets/rococo.png)
+
+4. it will take a while for your custom domain is recognize by netlify, if the proccess is completed , the warning of awaiting external DNS change to netlify DNS (if you using netlify DNS server, if you using your external provider theres no warning appears)
+![domain-management](/assets/mrkdwn-assets/domain%20management.png)
+
+5. back to netlify tab,after your domain is active , netlify also provide TLS encryption for your domain an sub domain, these encryption is use for secure site request , in other words convert HTTP to HTTPS 
+you can check by scrolling down the page 
+
+![TLS](/assets/mrkdwn-assets/netlify-TLS-verify.png)
+if yor dns not verify you can click `retry DNS verification`
+
+if the verification completed, you should se the section content change to this 
+![verify](/assets/mrkdwn-assets/nelify-TLS-cert.png)
+
+### and now yaour site already deployed and can be visited by yaour costume domain.\
+@buy_me_a_coffe blackpossum 2023
+
 
 ## My Bio :pencil2:
 
@@ -18,7 +93,7 @@ starting from expiriencing working project with overseas vendor,
 installing a new software integrated machine, i was blown away with the complexity of the installation.
 from there i start noticing engineering in different prespective, that machine in near future cannot operate just by transfering energy from one motion to become another motion anymore<br>
 `the future` is about how to build an integrated system that can works with machine part dynamicaly to increase output rate, seeing this if i only look and dont improve i will be left behind technology, thats why im here.
-![Alt text](image.png)
+
 ## My links :rocket:
 * __find me On :__ 
 
